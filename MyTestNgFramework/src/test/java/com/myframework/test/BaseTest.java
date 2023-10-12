@@ -11,18 +11,18 @@ public class BaseTest {
 
     @BeforeSuite
     public void beforeSuit() {
-        ExtentReport.initReports();
+        //extent report initialization code moved to listener
     }
 
     @BeforeMethod
     public void setUp(Method method) {
         Driver.initializeDriver();
-        ExtentReport.createTest(method.getName());
+        //ExtentReport.createTest(method.getName()); -- this moved to listner
     }
 
     @AfterMethod()
     public void tearDown() {
-        Driver.tearDownDriver();
+        //extent report flush code moved to listener
     }
 
     @AfterSuite

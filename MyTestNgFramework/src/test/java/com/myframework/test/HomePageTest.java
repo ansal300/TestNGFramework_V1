@@ -27,7 +27,7 @@ public class HomePageTest extends  BaseTest
     public static Object[][] getTestData()
     {
 
-        return new Object[][] {{"standard_user","secret_sauce","Swag Labs"}};
+        return new Object[][] {{"standard_user","secret_sauce","Swag Labss"}};
     }
 
 
