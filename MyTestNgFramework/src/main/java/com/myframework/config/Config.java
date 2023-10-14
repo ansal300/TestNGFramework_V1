@@ -6,5 +6,7 @@ public interface Config extends org.aeonbits.owner.Config {
     String url();
     long timeout();
     String browser();
+    String run_mode();
+    String remote_url();
 
 }

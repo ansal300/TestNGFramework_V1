@@ -6,12 +6,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.net.MalformedURLException;
 import java.time.Duration;
 
 public class Driver {
 
 
-    public static void initializeDriver() {
+    public static void initializeDriver() throws MalformedURLException {
 
         Config config = ConstantReader.configReader(Config.class);
         String browser = config.browser();

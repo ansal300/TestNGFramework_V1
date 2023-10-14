@@ -18,7 +18,7 @@ public class HomePageTest extends  BaseTest
     public void HomePageTest(String username,String password,String header) throws InterruptedException {
         LoginPage loginPage=new LoginPage();
         HomePage homePage=new HomePage();
-
+        ExtentLogger.info("user launched application");
         loginPage.userLogsIn(username,password).verifyUserIsLoggedIn(header);
         ExtentLogger.pass("User has logged in");
     }
@@ -27,7 +27,7 @@ public class HomePageTest extends  BaseTest
     public static Object[][] getTestData()
     {
 
-        return new Object[][] {{"standard_user","secret_sauce","Swag Labss"}};
+        return new Object[][] {{"standard_user","secret_sauce","Swag Labs"}};
     }
 
 
